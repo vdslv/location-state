@@ -43,7 +43,7 @@ openLocationSettings() => Promise<void>
 --------------------
 
 
-###Example
+### Example
 
 ```typescript
 import { LocationStatePlugin, State } from 'location-state-permissions';
