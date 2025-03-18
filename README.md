@@ -5,7 +5,7 @@ Capacitor plugin for location permission request and state.
 ## Install
 
 ```bash
-npm install location-state
+npm install location-state-permissions
 npx cap sync
 ```
 

@@ -1,5 +1,5 @@
 {
-  "name": "location-state",
+  "name": "location-state-permissions",
   "version": "0.0.1",
   "description": "Get location permission status of the app",
   "main": "dist/plugin.cjs.js",
