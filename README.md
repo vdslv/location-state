@@ -1,6 +1,6 @@
 # location-state
 
-Get location permission status of the app
+Capacitor plugin for location permission request and state.
 
 ## Install
 
@@ -34,7 +34,8 @@ checkPermission() => Promise<State>
 
 
 ### openLocationSettings()
-
+IOS: Request location permission two times to see "Change to Always allow" option.
+Android: Opens the location settings page in the settings app (available when permission is set to "while use").
 ```typescript
 openLocationSettings() => Promise<void>
 ```
