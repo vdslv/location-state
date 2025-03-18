@@ -1,3 +1,8 @@
 export interface LocationStatePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  checkPermission(): Promise<State>;
+  openLocationSettings(): Promise<void>;
+}
+
+export interface State {
+  status: 'notDetermined' | 'denied' | 'authorizedWhenInUse' | 'authorizedAlways'
 }
