@@ -1,4 +1,4 @@
-# location-state
+# location-state-permissions
 
 Capacitor plugin for location permission request and state.
 
@@ -41,6 +41,19 @@ openLocationSettings() => Promise<void>
 ```
 
 --------------------
+
+
+###Example
+
+```typescript
+import { LocationStatePlugin, State } from 'location-state-permissions';
+
+const LocationStatePlugin = registerPlugin<LocationStatePlugin>('LocationState');
+
+LocationStatePlugin.openLocationSettings();
+LocationStatePlugin.checkPermission().then((state: State) => {})
+```
+
 
 
 ### Interfaces
