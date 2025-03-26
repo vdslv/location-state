@@ -38,7 +38,7 @@ public class LocationStatePlugin: CAPPlugin, CAPBridgedPlugin {
         let status = CLLocationManager.authorizationStatus()
 
         switch status {
-        case .notDetermined:
+        case .notDetermined, .denied, .restricted:
             requestWhenInUseAuthorization(call)
         case .authorizedWhenInUse:
             requestAlwaysAuthorization(call)

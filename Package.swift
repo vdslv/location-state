@@ -2,11 +2,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "LocationState",
+    name: "LocationStatePermissions",
     platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "LocationState",
+            name: "LocationStatePermissions",
             targets: ["LocationStatePlugin"])
     ],
     dependencies: [
